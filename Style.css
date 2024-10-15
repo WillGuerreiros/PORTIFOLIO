@@ -397,3 +397,11 @@ footer{
 
 }
 
+@media(min-width:768px) and (max-width:1024px){
+    #foto-will{
+        width: 300px;
+        height: 300px;
+    }
+    
+
+}
