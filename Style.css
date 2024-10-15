@@ -51,7 +51,6 @@ header{
 }
 
 main{
-    border: red solid;
     display: flex;
     flex-direction: column;
 }
