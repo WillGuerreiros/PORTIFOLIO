@@ -143,12 +143,13 @@ main{
     background-color: var(--tertiary-color);
     font-family: "Bebas Neue", serif;
     font-weight: 400;
-    font-size: var(--M-font-size);
+    font-size: var(--G-font-size);
     color: var(--primary-color);
     text-align: center;
 }
 
 .inside-page{
+    min-height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -162,7 +163,7 @@ main{
 .tec-icon-box{
     display: flex;
     flex-wrap: wrap;
-    max-width: 40%;
+    max-width: 50%;
     align-items: center;
     justify-content: center;
 }
@@ -184,6 +185,7 @@ main{
     justify-content: center;
     flex-direction: column;
     max-width: 50%;
+    min-height: 40vh;
 }
 
 
@@ -259,6 +261,9 @@ main{
     width: 200px;
 }
 .sobre-txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 40px;
     font-size: var(--P-font-size);
     color: var(--primary-color);
@@ -267,3 +272,137 @@ main{
     font-style: normal;
     text-align: justify;
 }
+
+footer{
+    padding: 10px;
+    border-top: var(--tertiary-color) solid 1px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#imagem-footer{
+    height: 100px;
+    width: 100px;
+    object-fit:cover;
+    border: var(--tertiary-color) solid;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+@media(max-width:450px){
+    :root{
+        --G-font-size: 28px;
+        --M-font-size: 20px;
+        --P-font-size: 16px;
+        --SP-font-size: 12px;
+        --XP-font-size: 8px;
+        --G-radius: 12px;
+        --M-radius: 10px;
+        --P-radius: 8px;
+    }
+
+    main{
+        border: red solid;
+    }
+    header{
+        padding: 2%;
+    }
+
+    .home-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 12px;
+    }
+    
+    #foto-will{
+        margin: 12px;
+        width: 150px;
+        height: 150px;
+        object-fit:cover;
+        padding: 5px;
+    }
+  
+    .link-redes{
+        height: 24px;
+        width: 24px;
+    }
+    .home-page-desc{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 32px;
+        gap: 32px;
+        align-items: center;
+        background-color: var(--secundary-color);
+        border-radius: var(--M-radius);
+    }
+
+    #tec-page{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .inside-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+        margin: 8px;
+    }
+    
+    .tec-icon-box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .tec-icon{
+        height: 48px;
+        width: 48px;
+    }
+    
+    .tec-desc{
+        display: flex;
+        text-align: center;
+        padding: 8px;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+        min-height: 30vh;
+    }
+    
+    #pag-projetos{
+        border: blue solid;
+    }
+    
+    
+    .projeto{
+        border: green solid;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .projeto-desc{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%; 
+    }
+    .descricao-projeto{
+        padding: 10px;
+    }
+
+    .img-projeto{
+        object-fit: cover;
+        border-radius: var(--G-radius);
+        border: var(--primary-color) solid;
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
