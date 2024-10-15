@@ -407,10 +407,45 @@ footer{
 }
 
 @media(min-width:451px) and (max-width:767px){
+
+    :root{
+        --G-font-size: 28px;
+        --M-font-size: 20px;
+        --P-font-size: 16px;
+        --SP-font-size: 12px;
+        --XP-font-size: 8px;
+        --G-radius: 12px;
+        --M-radius: 10px;
+        --P-radius: 8px;
+    }
+
     #foto-will{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .projeto{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
     
+    .projeto-desc{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%; 
+    }
+    .descricao-projeto{
+        padding: 10px;
+    }
+
+    .img-projeto{
+        object-fit: cover;
+        border-radius: var(--G-radius);
+        border: var(--primary-color) solid;
+        height: 100px;
+        width: 100px;
+    }
+
 
 }
