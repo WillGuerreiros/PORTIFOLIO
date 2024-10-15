@@ -20,6 +20,7 @@
     --P-radius: 8px;
 }
 
+
 body{
     font-size: 100%;
     background-color:var(--primary-color);
@@ -449,3 +450,4 @@ footer{
 
 
 }
+
