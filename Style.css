@@ -405,3 +405,12 @@ footer{
     
 
 }
+
+@media(min-width:451px) and (max-width:767px){
+    #foto-will{
+        width: 200px;
+        height: 200px;
+    }
+    
+
+}
